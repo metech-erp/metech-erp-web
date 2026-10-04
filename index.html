@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ERP</title>
+<meta name="description" content="ERP : ventes, stock, comptabilité, RH et paie.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;800&display=swap">
+<!-- Généré par deploy/publish-pages.sh : https://wisconsin-understood-integrity-cds.trycloudflare.com = adresse publique de l'Odoo (tunnel) -->
+<style>
+:root{--ink:#141414;--muted:#4A4A4A;--ground:#F4F4F2;--from:#C9E4FF;--to:#FFDCCB}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:'Archivo',system-ui,sans-serif;color:var(--ink);background:var(--ground);display:flex}
+.brand{flex:1 1 50%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;padding:48px;text-align:center;background:linear-gradient(180deg,var(--from) 0%,var(--to) 100%)}
+.brand svg{width:260px;max-width:60%;height:auto}
+.wordmark{font-weight:800;font-size:clamp(56px,6vw,88px);letter-spacing:-0.02em;line-height:1}
+.tagline{max-width:26rem;margin:0;font-size:18px;line-height:1.5;color:#2E2E2E}
+.panel{flex:1 1 50%;display:flex;align-items:center;justify-content:center;padding:48px 24px}
+.card{width:100%;max-width:460px;padding:44px 40px;border-radius:22px;background:#fff;box-shadow:0 24px 60px rgba(20,20,20,.10)}
+.logo{display:flex;align-items:center;gap:12px;margin-bottom:32px;font-weight:800;font-size:24px;letter-spacing:-0.02em}
+h1{margin:0 0 8px;font-weight:800;font-size:36px;letter-spacing:-0.02em}
+p.sub{margin:0 0 32px;font-size:17px;color:var(--muted)}
+.btn{display:flex;align-items:center;justify-content:center;min-height:52px;width:100%;border-radius:12px;font:500 17px 'Archivo',system-ui,sans-serif;text-decoration:none}
+.btn-primary{background:var(--ink);color:#fff}
+.btn-primary:hover,.btn-primary:focus-visible{background:#2E2E2E}
+.btn-secondary{margin-top:12px;background:#fff;color:var(--ink);border:1px solid #D6D6D2}
+.btn-secondary:hover,.btn-secondary:focus-visible{border-color:var(--ink)}
+.btn:focus-visible{outline:3px solid rgba(20,20,20,.25);outline-offset:2px}
+.note{margin:24px 0 0;padding-top:20px;border-top:1px solid #E6E6E2;font-size:14px;line-height:1.5;color:var(--muted);text-align:center}
+@media (max-width:991px){
+  body{flex-direction:column}
+  .brand{flex:0 0 auto;padding:32px 16px;gap:12px}
+  .brand svg{width:96px}
+  .wordmark{font-size:44px}
+  .tagline{display:none}
+  .panel{align-items:flex-start;padding:24px 16px 48px}
+  .card{padding:32px 24px}
+  .logo{display:none}
+}
+</style>
+</head>
+<body>
+<aside class="brand">
+  <svg viewBox="0 0 100 100" aria-hidden="true">
+    <g fill="none" stroke="#141414" stroke-width="2.2">
+      <path d="M75 82 H41 A16 16 0 0 1 41 50 H75 M75 50 H41 A16 16 0 0 1 41 18 H75"/>
+      <path d="M75 77 H41 A11 11 0 0 1 41 55 H75 M75 45 H41 A11 11 0 0 1 41 23 H75"/>
+      <path d="M75 72 H41 A6 6 0 0 1 41 60 H75 M75 40 H41 A6 6 0 0 1 41 28 H75"/>
+    </g>
+  </svg>
+  <div class="wordmark">ERP</div>
+  <p class="tagline">Ventes, stock, comptabilité, RH : toute l'entreprise au même endroit.</p>
+</aside>
+<main class="panel">
+  <div class="card">
+    <div class="logo"><img src="logo.svg" alt="" width="44" height="44"><span>ERP</span></div>
+    <h1>Bienvenue</h1>
+    <p class="sub">Ouverture de votre espace de travail…</p>
+    <a class="btn btn-primary" id="open" href="https://wisconsin-understood-integrity-cds.trycloudflare.com/web/login">Se connecter à ERP</a>
+    <a class="btn btn-secondary" href="https://github.com/metech-erp/metech-erp-mobile/releases/latest/download/metech-erp.apk">Télécharger l'application Android</a>
+    <p class="note">Si la page ne s'ouvre pas, le serveur de démonstration est peut-être éteint.</p>
+  </div>
+</main>
+<script>
+  // Redirection automatique vers la page de connexion d'Odoo
+  setTimeout(function () { location.replace(document.getElementById('open').href); }, 1200);
+</script>
+</body>
+</html>
